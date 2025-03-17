@@ -2,7 +2,7 @@
 
 
 ### Running python script to mimic a cryptocurrency api:
-We will be running scripts *producer1,2,3* on our ec2 instance which will contain kafka streaming services which will mimic that of an api. [linklol](data)
+We will be running scripts *producer1,2,3* on our ec2 instance which will contain kafka streaming services which will mimic that of an api. [linklol](Data)
 
 ### Running cassandra on a local machine(windows):
 To run a cassandra database on our windows local machine, we can use a docker container which has cassandra installed in it. Open command prompt or powershell and enter:
