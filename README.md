@@ -1,7 +1,9 @@
 # RealTime_OrderBook_Data_Pipeline
 
 ### Dataset:
-To mimic an api we use 1 sec time frame dataset from [kaggle](https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data?select=ADA_1sec.csv). We clean this dataset to get a perfect dataset of BTC, ADA and ETH of about 12 days worth of 1 second orderbook data. Refer the kaggle link to understand what each column in the dataset is about (https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data?select=ADA_1sec.csv). 
+To mimic an api we use 1 sec time frame dataset from [kaggle](https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data).
+This dataset contains limit order book data for Bitcoin (BTC), Ethereum (ETH), and Cardano (ADA) over a period of approximately 12 days. The data was collected from Coinbase's websocket and processed into snapshots at 1-second, 1-minute, and 5-minute intervals. This dataset provides valuable insights into market microstructure, liquidity, and order flow dynamics for cryptocurrency trading analysis.
+Link to dataset: (https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data). 
 
 ### Running python script to mimic a cryptocurrency api:
 We will be running scripts Btc_producer.py, Eth_producer.py and Ada_producer.py on our ec2 instance which will contain kafka streaming services which will mimic that of an api. [linklol](Data)
