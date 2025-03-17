@@ -20,7 +20,7 @@ def send_data(dataframe, symbol, producer):
 if __name__ == "__main__":
     try:
         producer = KafkaProducer(
-            bootstrap_servers=['54.176.118.167:9092'],
+            bootstrap_servers=['<your_ec2_ip_address>:9092'],
             value_serializer=lambda x: dumps(x).encode('utf-8')
         )
 
