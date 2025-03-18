@@ -3,10 +3,12 @@
 ### Dataset:
 To mimic an api we use 1 sec time frame dataset from [kaggle](https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data).
 This dataset contains limit order book data for Bitcoin (BTC), Ethereum (ETH), and Cardano (ADA) over a period of approximately 12 days. The data was collected from Coinbase's websocket and processed into snapshots at 1-second, 1-minute, and 5-minute intervals. This dataset provides valuable insights into market microstructure, liquidity, and order flow dynamics for cryptocurrency trading analysis.
-Link to dataset: (https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data). 
+Link to dataset: (https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data).
+
+The [dataset](Data) has been cleaned up to make sure we only use the useful and relevant parameters.   
 
 ### Running python script to mimic a cryptocurrency api:
-We will be running scripts Btc_producer.py, Eth_producer.py and Ada_producer.py on our ec2 instance which will contain kafka streaming services which will mimic that of an api. [linklol](Data)
+We will be running scripts Btc_producer.py, Eth_producer.py and Ada_producer.py on our ec2 instance which will contain kafka streaming services which will mimic that of an api.
 
 ### Running cassandra on a local machine(windows):
 To run a cassandra database on our windows local machine, we can use a docker container which has cassandra installed in it. Open command prompt or powershell and enter:
