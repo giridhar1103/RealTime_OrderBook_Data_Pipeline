@@ -26,6 +26,11 @@ The [dataset](Data) has been cleaned up to make sure we only use the useful and 
 ### Producers
 We will be running scripts [Btc_producer.py](Code/Btc_producer.py), [Eth_producer.py](Code/Eth_producer.py) and [Ada_producer.py](Code/Ada_producer.py) on our ec2 instance which will contain kafka streaming services which will simulate that of an api.
 
+The Python scripts read historical order book data from [CSV files](Data) and streams it to an Apache Kafka topic (orderbook_stream). It uses the KafkaProducer from the kafka-python library to send each row of the CSV as a JSON message to the specified Kafka broker, with a 1-second interval between messages—simulating real-time data streaming.
+
+### Consumer
+The [consumer script](Code/consumer.py) consumes real-time order book data from a Kafka topic (orderbook_stream) and inserts it into an Apache Cassandra database (cryptoorderbook.orderbook). It connects to a Kafka broker, deserializes incoming JSON messages, and stores each message as a new row in Cassandra. The script is part of a data pipeline that captures and persists high-frequency trading data for further processing or analysis, with error handling included for both Kafka and Cassandra connections.
+
 ### Running cassandra on a local machine(windows)
 To run a cassandra database on our windows local machine, we can use a docker container which has cassandra installed in it. Open command prompt or powershell and enter:
 
