@@ -29,6 +29,19 @@ The [dataset](Data) has been cleaned up to make sure we only use the useful and 
 ### Producers
 We will be running scripts [Btc_producer.py](Code/Btc_producer.py), [Eth_producer.py](Code/Eth_producer.py) and [Ada_producer.py](Code/Ada_producer.py) on our ec2 instance which will contain kafka streaming services which will simulate that of an api.
 
+Before we run the producer files, we need to first initialize apache kafka and zookeeper. You can refer this [repo](https://github.com/giridhar1103/Kafka_Demo-Setup) to learn how to install Apache Kafka on ec2 instances like t2.micro (or any other instance that has low cpu). 
+
+If you have already set up, then just run:
+
+```bash
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+```bash
+bin/kafka-server-start.sh config/server.properties
+```
+
+Remember that we need to run these both commands on different ec2 instance sessions.
+
 The Python scripts read historical order book data from [CSV files](Data) and streams it to an Apache Kafka topic (orderbook_stream). It uses the KafkaProducer from the kafka-python library to send each row of the CSV as a JSON message to the specified Kafka broker, with a 1-second interval between messages—simulating real-time data streaming.
 
 ### Consumer
