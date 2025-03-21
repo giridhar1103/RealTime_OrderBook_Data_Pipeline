@@ -36,5 +36,4 @@ then configure user DSN where we will enter the host name as "localhost", port a
 
 Next, go to tableau and create a new book, then go to new data souce. Now you can add your simba OBDC here and select your database name, schema and table name. You will see the data get updated on the right side.
 
-*insert img*
-
+![dbsource](images/database_connection_pic.PNG)
