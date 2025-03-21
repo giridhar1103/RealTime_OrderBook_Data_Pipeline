@@ -42,6 +42,11 @@ bin/kafka-server-start.sh config/server.properties
 
 Remember that we need to run these both commands on different ec2 instance sessions.
 
+Now let's run the producer files:
+```bash
+python3 <your_producer_file>.py
+```
+
 The Python scripts read historical order book data from [CSV files](Data) and streams it to an Apache Kafka topic (orderbook_stream). It uses the KafkaProducer from the kafka-python library to send each row of the CSV as a JSON message to the specified Kafka broker, with a 1-second interval between messages—simulating real-time data streaming.
 
 ### Consumer
