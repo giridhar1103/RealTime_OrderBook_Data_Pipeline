@@ -34,6 +34,8 @@ The Python scripts read historical order book data from [CSV files](Data) and st
 ### Consumer
 The [consumer script](Code/consumer.py) consumes real-time order book data from a Kafka topic (orderbook_stream) and inserts it into an Apache Cassandra database (cryptoorderbook.orderbook). It connects to a Kafka broker, deserializes incoming JSON messages, and stores each message as a new row in Cassandra. The script is part of a data pipeline that captures and persists high-frequency trading data for further processing or analysis, with error handling included for both Kafka and Cassandra connections.
 
+If there was an issue or if you want to clear your database to restart the process, you can use the shortcut python file to TRUNCATE the data. [clear_orderbook.py](Code/clear_orderbook.py)
+
 ### Running cassandra on a local machine(windows)
 To run a cassandra database on our windows local machine, we can use a docker container which has cassandra installed in it. Open command prompt or powershell and enter:
 
