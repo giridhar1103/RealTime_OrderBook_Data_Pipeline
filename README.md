@@ -1,4 +1,7 @@
 # RealTime_OrderBook_Data_Pipeline
+### Architecture 
+![Architecture](images)
+
 
 ### Hardware and Software Used
 
