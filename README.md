@@ -86,3 +86,5 @@ Next, go to tableau and create a new book, then go to new data souce. Now you ca
 ### Visualization:
 We will be visualizing the data that is being fed into our cassandra database in real time using a tableau dashboard.
 
+First we create a simple sheet with one chart visualizing the different parameters of btc's openbook data and we repeat the same for the other two crypto currencies. 
+![exmp](images/ExampleBtc.JPG)
