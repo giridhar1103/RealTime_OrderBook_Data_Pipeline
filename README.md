@@ -87,4 +87,19 @@ Next, go to tableau and create a new book, then go to new data souce. Now you ca
 We will be visualizing the data that is being fed into our cassandra database in real time using a tableau dashboard.
 
 First we create a simple sheet with one chart visualizing the different parameters of btc's openbook data and we repeat the same for the other two crypto currencies. 
+
 ![exmp](images/ExampleBtc.JPG)
+
+We can see from the [kaggle website]():
+
+midpoint = the midpoint between the best bid and the best ask
+spread = the difference between the best bid and the best ask
+bids_distance_x = the distance of bid level x from the midprice in %
+asks_distance_x = the distance of ask level x from the midprice in %
+bids_market_notional_x = volume of market orders at bid level x
+bids_limit_notional_x = volume of limit orders at bid level x
+bids_cancel_notional_x = volume of canceled orders at bid level x
+asks_market_notional_x = volume of market orders at ask level x
+asks_limit_notional_x = volume of limit orders at ask level x
+asks_cancel_notional_x = volume of canceled orders at ask level x
+
