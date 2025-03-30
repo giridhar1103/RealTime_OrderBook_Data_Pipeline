@@ -81,3 +81,8 @@ then configure user DSN where we will enter the host name as "localhost", port a
 Next, go to tableau and create a new book, then go to new data souce. Now you can add your simba OBDC here and select your database name, schema and table name. You will see the data get updated on the right side.
 
 ![dbsource](images/database_connection_pic.PNG)
+
+
+### Visualization:
+We will be visualizing the data that is being fed into our cassandra database in real time using a tableau dashboard.
+
