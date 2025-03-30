@@ -106,4 +106,4 @@ asks_cancel_notional_x = volume of canceled orders at ask level x
 We plot the midpoint of each second against time along with the volume of buys(in green) and volume of sells(in red) for each second. For our second metric, we plot the volume of limit order of asks and volume of limit order of bids to see which is being dominated; The selling side or the buying side. 
 
 Final dashboard:
-[finalDashboard](images/Dashboard.png)
+![finalDashboard](images/Dashboard.png)
