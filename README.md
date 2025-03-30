@@ -90,7 +90,7 @@ First we create a simple sheet with one chart visualizing the different paramete
 
 ![exmp](images/ExampleBtc.JPG)
 
-We can see from the [kaggle website]():
+We can see from the [kaggle website](https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data/data):
 
 midpoint = the midpoint between the best bid and the best ask  
 spread = the difference between the best bid and the best ask  
@@ -103,3 +103,7 @@ asks_market_notional_x = volume of market orders at ask level x
 asks_limit_notional_x = volume of limit orders at ask level x  
 asks_cancel_notional_x = volume of canceled orders at ask level x  
 
+We plot the midpoint of each second against time along with the volume of buys(in green) and volume of sells(in red) for each second. For our second metric, we plot the volume of limit order of asks and volume of limit order of bids to see which is being dominated; The selling side or the buying side. 
+
+Final dashboard:
+[finalDashboard](images/Dashboard.png)
