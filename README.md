@@ -86,7 +86,7 @@ Next, go to tableau and create a new book, then go to new data souce. Now you ca
 ### Visualization:
 We will be visualizing the data that is being fed into our cassandra database in real time using a tableau dashboard.
 
-First we create a simple sheet with one chart visualizing the different parameters of btc's openbook data and we repeat the same for the other two crypto currencies. 
+First, we create a simple sheet with one chart visualizing the different parameters of BTC’s order book data, and we repeat the same for the other two cryptocurrencies. 
 
 ![exmp](images/ExampleBtc.JPG)
 
@@ -103,7 +103,10 @@ asks_market_notional_x = volume of market orders at ask level x
 asks_limit_notional_x = volume of limit orders at ask level x  
 asks_cancel_notional_x = volume of canceled orders at ask level x  
 
-We plot the midpoint of each second against time along with the volume of buys(in green) and volume of sells(in red) for each second. For our second metric, we plot the volume of limit order of asks and volume of limit order of bids to see which is being dominated; The selling side or the buying side. 
-
-Final dashboard:
+#### Final dashboard:
 ![finalDashboard](images/Dashboard.png)
+
+We plot the **midpoint** of each second against time along with the **volume of buys** (in green) and **volume of sells** (in red) for each second.  
+
+For our second metric, we plot the **volume of limit orders** for asks and bids to see which side is dominating — the selling side or the buying side.
+
