@@ -9,7 +9,7 @@ KAFKA_TOPIC = 'orderbook_stream' # Kafka topic name
 
 try:
     producer = KafkaProducer(
-        bootstrap_servers=['<your_ec2_ip_address>'],
+        bootstrap_servers=['<your_ec2_ip_addres>'],
         value_serializer=lambda x: dumps(x).encode('utf-8')
     )
 
