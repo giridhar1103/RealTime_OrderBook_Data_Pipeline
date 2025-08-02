@@ -6,7 +6,7 @@ from json import loads
 try:
     consumer = KafkaConsumer(
         'orderbook_stream',
-        bootstrap_servers=['<your_ec2_ip>'],
+        bootstrap_servers=['<your__ec2_ip>'],
         value_deserializer=lambda x: loads(x.decode('utf-8'))
     )
 except Exception as e:
@@ -57,4 +57,5 @@ if consumer and session is not None:
                     data.get('asks_market_notional_0')
                 ])
             except Exception as e:
+
                 print("An error occurred while processing or inserting data into Cassandra:", e)
