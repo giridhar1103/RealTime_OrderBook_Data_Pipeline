@@ -15,7 +15,7 @@ except Exception as e:
 
 # Initialize Cassandra Session
 try:
-    cluster = Cluster(['127.0.0.1'])
+    cluster = Cluster(['127.0.0'])
     session = cluster.connect()
     session.set_keyspace("cryptoorderbook")
 except Exception as e:
@@ -59,6 +59,7 @@ if consumer and session is not None:
             except Exception as e:
 
                 print("An error occurred while processing or inserting data into Cassandra:", e)
+
 
 
 
