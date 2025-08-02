@@ -1,4 +1,4 @@
-from cassandra.cluster import 
+from cassandra.cluster import cluster
 from kafka import KafkaConsumer
 from json import loads
 
