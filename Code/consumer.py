@@ -1,6 +1,6 @@
 from cassandra.cluster import Cluster
 from kafka import KafkaConsumer
-from json import loads
+from json import load
 
 # Initialize Kafka Consumer
 try:
@@ -59,6 +59,7 @@ if consumer and session is not None:
             except Exception as e:
 
                 print("An error occurred while processing or inserting data into Cassandra:", e)
+
 
 
 
