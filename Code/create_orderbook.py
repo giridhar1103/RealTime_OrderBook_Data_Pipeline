@@ -1,5 +1,5 @@
 from cassandra.cluster import Cluster
-import p
+import
 try:
     # Connect to Cassandra
     cluster = Cluster(['127.0.0.1'])
