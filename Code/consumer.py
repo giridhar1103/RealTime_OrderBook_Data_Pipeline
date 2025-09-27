@@ -1,7 +1,7 @@
 from cassandra.cluster import Cluster
 from kafka import KafkaConsumer
 from json import loads
-from 
+fr
 
 # Initialize Kafka Consumer
 try:
