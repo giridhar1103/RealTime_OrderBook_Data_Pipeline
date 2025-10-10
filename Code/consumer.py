@@ -60,8 +60,7 @@ if consumer and session is not None:
             except Exception as e:
 
                 print("An error occurred while processing or inserting data into Cassandra:", e)
-
-
+
 
 
 
