@@ -68,7 +68,6 @@ if consumer and session is not None:
 
 
 
-
 
 
 
