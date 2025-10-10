@@ -3,6 +3,7 @@ from kafka import KafkaConsumer
 from json import loads
 
 
+
 # Initialize Kafka Consumer
 try:
     consumer = KafkaConsumer(
