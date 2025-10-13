@@ -3,7 +3,6 @@ from time import sleep
 from json import dumps
 import pandas as pd
 
-
 dataframe = pd.read_csv('BTC_1sec_Tf.csv')
 
 KAFKA_TOPIC = 'orderbook_stream' # Kafka topic name
