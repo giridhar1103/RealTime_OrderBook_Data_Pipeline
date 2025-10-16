@@ -35,3 +35,4 @@ try:
 
 except Exception as e:
     print("An error occurred while creating the table:", e)
+
