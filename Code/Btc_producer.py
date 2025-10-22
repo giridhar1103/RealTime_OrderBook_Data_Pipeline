@@ -6,6 +6,7 @@ import pandas as pd
 dataframe = pd.read_csv('BTC_1sec_Tf.csv')
 
 
+
 KAFKA_TOPIC = 'orderbook_stream' # Kafka topic name
 
 try:
@@ -40,3 +41,4 @@ if producer and dataframe is not None:
              print("Kafka producer closed.") 
          except Exception as e: 
              print("An error occurred while flushing or closing the producer:", e)
+
