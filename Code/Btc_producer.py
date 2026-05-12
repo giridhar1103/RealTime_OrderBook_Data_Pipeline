@@ -40,5 +40,4 @@ if producer and dataframe is not None:
          except Exception as e: 
              print("An error occurred while flushing or closing the producer:", e)
 
-
-
+
